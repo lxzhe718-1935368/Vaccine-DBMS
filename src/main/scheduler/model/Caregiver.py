@@ -27,7 +27,7 @@ class Caregiver:
                 curr_hash = row['Hash']
                 calculated_hash = Util.generate_hash(self.password, curr_salt)
                 if not curr_hash == calculated_hash:
-                    # print("Incorrect password")
+                    print("Incorrect password")
                     cm.close_connection()
                     return None
                 else:
